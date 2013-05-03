@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="UserInterface.Pages.PresentationDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Rectangle 
+    VerticalAlignment="Top" HorizontalAlignment="Stretch" 
+    Height="60" Fill="#4a7b82"/>
+        <!--Pivot Control-->
+        <phone:Pivot Name="PV_PresentationDetail" Title="Presentation Detail">
+            <!--Pivot item one-->
+                <!--Pivot item one-->
+
+                <phone:PivotItem Header="">
+                    <StackPanel Margin="0,0,0,20" Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Left" Width="436" >
+                        <TextBlock Name="TB_PresentationName" HorizontalAlignment="Left" FontSize="25" Margin="0,0,0,0" TextWrapping="Wrap" />
+                        <TextBlock Name="TB_PresentationType" HorizontalAlignment="Left" Margin="0,0,0,0" />
+                        <TextBlock Name="TB_PresentationTime" HorizontalAlignment="Left" Margin="0,0,0,20" />
+
+                    <TextBlock Name="TB_PresentationAbstract" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" />
+
+                    </StackPanel>
+            
+            </phone:PivotItem>
+
+        </phone:Pivot>
+      </Grid>
+    
+</phone:PhoneApplicationPage>
